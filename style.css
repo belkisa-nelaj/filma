@@ -21,11 +21,12 @@ header {
 
 /* Movie Container */
 .container {
-    width: 80%;
+    width: 80%;  /* Adjust width for better spacing */
     margin: 40px auto;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* Spacing between items */
+    justify-items: center;
 }
 
 /* Movie Item */
