@@ -1,59 +1,125 @@
+/* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #121212; /* Dark background for cinema feel */
     text-align: center;
+    color: #fff;
 }
 
+/* Header */
 header {
-    background: #333;
-    color: white;
+    background: #1f1f1f;
+    color: #ffcc00; /* Movie-style golden text */
     padding: 20px;
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Movie Container */
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+/* Movie Item */
 .movie {
     display: inline-block;
     margin: 15px;
+    transition: transform 0.3s ease-in-out;
 }
 
 .movie img {
-    width: 200px;
-    height: 300px;
-    border-radius: 8px;
+    width: 230px;
+    height: 340px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 
+.movie img:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.4);
+}
+
+.movie p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Form Container */
 .form-container {
-    background: white;
-    padding: 20px;
-    margin-top: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px #aaa;
+    background: #1f1f1f;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
     width: 50%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* Form Inputs */
 input, select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
+    border: 1px solid #ffcc00;
     background: #333;
     color: white;
-    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Submit Button */
+button {
+    background: #ffcc00;
+    color: #121212;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background 0.3s;
 }
+
+button:hover {
+    background: #e6b800;
+}
+
+/* Checkbox Styling */
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.checkbox input {
+    width: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .form-container {
+        width: 80%;
+    }
+}
+
+
+
 
