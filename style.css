@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.movie {
+    display: inline-block;
+    margin: 15px;
+}
+
+.movie img {
+    width: 200px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+.form-container {
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px #aaa;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
