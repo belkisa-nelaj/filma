@@ -1,60 +1,78 @@
 <!DOCTYPE html>
-<html lasng="sq">
+<html lang="sq">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ballinat e Filmave</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CineWorld</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+    <!-- ===== HEADER SECTION ===== -->
     <header>
-        <h1>Ballinat e Filmave në Kinema</h1>
+        <h1>CineWorld</h1>
     </header>
 
-    <div class="container">
-        <div class="movie">
-            <img src="images/anora.png" alt="Poster i Filmit Anora">
-            <p>Anora</p>
-        </div>
-        <div class="movie">
-            <img src="images/the brutalist.png" alt="Poster i Filmit The Brutalist">
-            <p>The Brutalist</p>
-        </div>
-        <div class="movie">
-            <img src="images/tbath.png" alt="Poster i Filmit The Boy and the Heron">
-            <p>The Boy and the Heron</p>
-        </div>
-    </div>
-
-    <div class="form-container">
-        <h2>Regjistrohu për Njoftime</h2>
-        <form action="submit.php" method="POST">
-            <label for="name">Emri:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="age">Mosha:</label>
-            <input type="number" id="age" name="age" min="10" required>
-
-            <label for="profession">Profesioni:</label>
-            <input type="text" id="profession" name="profession" required>
-
-            <div class="checkbox">
-                <input type="checkbox" id="notifications" name="notifications" required>
-                <label for="notifications">Pranoj të marr njoftime nga website</label>
+    <!-- ===== MAIN CONTENT SECTION ===== -->
+    <main>
+        <!-- Movie Container -->
+        <div class="container">
+            <!-- Movie 1: Anora -->
+            <div class="movie">
+                <img src="images/anora.png" alt="Poster i Filmit Anora">
+                <p>Anora</p>
             </div>
 
-            <button type="submit" class="btn">Regjistrohu</button>
-        </form>
-    </div>
+            <!-- Movie 2: The Brutalist -->
+            <div class="movie">
+                <img src="images\the brutalist.png" alt="Poster i Filmit The Brutalist">
+                <p>The Brutalist</p>
+            </div>
+
+            <!-- Movie 3: The Boy and the Heron -->
+            <div class="movie">
+                <img src="images/tbath.png" alt="Poster i Filmit The Boy and the Heron">
+                <p>The Boy and the Heron</p>
+            </div>
+        </div>
+
+        <!-- Form Container -->
+        <div class="form-container">
+            <h2>Regjistrohu për Njoftime</h2>
+            <form action="submit.php" method="POST">
+                <!-- Name Field -->
+                <label for="name">Emri:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Age Field -->
+                <label for="age">Mosha:</label>
+                <input type="number" id="age" name="age" min="10" required>
+
+                <!-- Profession Field -->
+                <label for="profession">Profesioni:</label>
+                <input type="text" id="profession" name="profession" required>
+
+                <!-- Checkbox for Notifications -->
+                <div class="checkbox">
+                    <input type="checkbox" id="notifications" name="notifications" required>
+                    <label for="notifications">Pranoj të marr njoftime nga website</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn">Regjistrohu</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- ===== FOOTER SECTION ===== -->
+    <footer>
+        <h1>CineWorld</h1>
+        <h1>Contact: CineWorld@gmail.com</h1>
+    </footer>
+
 </body>
-
-<footer>
-    <h1>Kiss Movies</h1>
-    <h1>Contact: kissmovies@gmail.com</h1>
-</footer>
-
 </html>
