@@ -10,8 +10,8 @@ body {
 
 /* Header */
 header {
-    background: #1f1f1f;
-    color: #ffcc00; /* Movie-style golden text */
+    background: #1a1a1a;
+    color: #c0a040; /* Softer gold */
     padding: 20px;
     font-size: 28px;
     font-weight: bold;
@@ -40,29 +40,29 @@ header {
     width: 230px;
     height: 340px;
     border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.15);
     transition: transform 0.3s ease-in-out;
 }
 
 .movie img:hover {
     transform: scale(1.08);
-    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.4);
+    box-shadow: 0px 10px 25px rgba(255, 255, 255, 0.3);
 }
 
 .movie p {
     font-size: 18px;
     margin-top: 10px;
     font-weight: bold;
-    color: #ffcc00;
+    color: #c0a040; /* Softer gold */
 }
 
 /* Form Container */
 .form-container {
-    background: #1f1f1f;
+    background: #1a1a1a;
     padding: 30px;
     margin-top: 40px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.15);
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -73,7 +73,7 @@ input, select {
     width: 100%;
     padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ffcc00;
+    border: 1px solid #888; /* Neutral gray border */
     background: #333;
     color: white;
     border-radius: 5px;
@@ -82,7 +82,7 @@ input, select {
 
 /* Submit Button */
 button {
-    background: #ffcc00;
+    background: #c0a040; /* Softer gold */
     color: #121212;
     padding: 12px 20px;
     font-size: 18px;
@@ -94,7 +94,7 @@ button {
 }
 
 button:hover {
-    background: #e6b800;
+    background: #a78d36; /* Darker gold */
 }
 
 /* Checkbox Styling */
@@ -103,7 +103,7 @@ button:hover {
     align-items: center;
     gap: 10px;
     font-size: 14px;
-    color: #ddd;
+    color: #bbb;
 }
 
 .checkbox input {
@@ -120,7 +120,4 @@ button:hover {
         width: 80%;
     }
 }
-
-
-
 
