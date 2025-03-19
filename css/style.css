@@ -54,8 +54,8 @@ header .banner .tagline {
     text-align: center;
     transition: transform 0.3s ease-in-out;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    height: 100%; /* Ensure all movie boxes have the same height */
+    flex-direction: column; /* Rendit elementët vertikalisht */
+    height: 100%; /* gjithe filmat kane te njejten madhsi */
 }
 
 .movie:hover {
@@ -77,7 +77,7 @@ header .banner .tagline {
 .movie .synopsis {
     font-size: 14px;
     color: #bbb;
-    flex-grow: 1; /* Allow synopsis to take up remaining space */
+    flex-grow: 1; /* Pershkrimi mbush hapsiren e mbetur */
 }
 
 .movie .rating {
@@ -88,7 +88,7 @@ header .banner .tagline {
 
 .movie .trailer-btn {
     display: inline-block;
-    margin-top: auto; /* Push the button to the bottom */
+    margin-top: auto; 
     padding: 8px 16px;
     background: #c0a040;
     color: #121212;
@@ -134,8 +134,6 @@ header .banner .tagline {
     border-radius: 5px;
 }
 
-
-Copy
 /* Checkbox Styling */
 .checkbox {
     display: flex;
