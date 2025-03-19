@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="sq">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineWorld</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
     <!-- ===== HEADER SECTION ===== -->
     <header>
         <div class="banner">
@@ -83,7 +82,7 @@
 
                 <!-- Age Field -->
                 <label for="age">Mosha:</label>
-                <input type="number" id="age" name="age" min="10" required aria-label="Mosha">
+                <input type="number" id="age" name="age" min="13" max="100" required aria-label="Mosha">
 
                 <!-- Email Field -->
                 <label for="email">Email:</label>
@@ -95,7 +94,7 @@
 
                 <!-- Checkbox for Notifications -->
                 <div class="checkbox">
-                    <input type="checkbox" id="notifications" name="notifications">
+                    <input type="checkbox" id="notifications" name="notifications" required>
                     <label for="notifications">Pranoj të marr njoftime për filmat e ri</label>
                 </div>
 
@@ -114,11 +113,29 @@
     <!-- JavaScript for Form Validation and Confirmation -->
     <script>
         document.getElementById('registration-form').addEventListener('submit', function (e) {
-            e.preventDefault();
-            // Simulate form submission
+            const ageInput = document.getElementById('age');
+            const age = parseInt(ageInput.value, 10);
+            const checkbox = document.getElementById('notifications');
+
+            // Validate age
+            if (age < 13 || age > 100) {
+                alert('Ju lutem shkruani një moshë midis 13 dhe 100.');
+                e.preventDefault(); // Prevent form submission
+                return;
+            }
+
+            // Validate checkbox
+            if (!checkbox.checked) {
+                alert('Ju lutem pranoni të merrni njoftime për filmat e ri duke klikuar kutinë e verifikimit.');
+                e.preventDefault(); // Prevent form submission
+                return;
+            }
+
+            // If validation passes, show confirmation message and reset the form
             document.getElementById('confirmation-message').classList.remove('hidden');
             this.reset();
         });
     </script>
 </body>
 </html>
+               

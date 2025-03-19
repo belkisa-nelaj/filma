@@ -3,7 +3,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background for cinema feel */
+    background-color: #121212; 
     color: #fff;
     line-height: 1.6;
 }
@@ -11,7 +11,7 @@ body {
 /* Header */
 header {
     background: #1a1a1a;
-    color: #c0a040; /* Softer gold */
+    color: #c0a040;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
